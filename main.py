@@ -21,7 +21,6 @@ def get_coordinates(location):
     loc = geolocator.geocode(location)
     return (loc.latitude, loc.longitude) if loc else None
 
-
 # Function to get the nearest graph node
 def get_nearest_node(G, location):
     coordinates = get_coordinates(location)
